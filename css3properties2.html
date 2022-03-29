@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @Keyframes bounce {
+from, to {
+    bottom:0px;
+    animation-timing-function:ease-out;
+}
+50% {
+    bottom:200px;
+    animation-timing-function: ease-in;
+}
+
+    }
+    div{
+        position:absolute;
+        width:20px;
+        height: 20px;
+        border-radius: 10px;
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+    }
+    #b1{
+      left:10px;
+      background:red;
+      animation-duration: 1s;
+      
+    }
+    #b2{
+        left:50px;
+        background:blue;
+        animation-duration: 1s;
+    }
+    #b3{
+       left:90px;
+       background: green;
+       animation-duration: 1s;
+
+    }
+    #b4{
+        left:130px;
+        background:silver;
+        animation-duration: 1s;
+
+    }
+    #b5{
+        left:170px;
+        background:black;
+        animation-duration: 1s;
+    }
+    @Keyframes boxmove{
+        from{left:0px;}
+        to{left:300px;}
+    }
+    div:hover{
+        animation-play-state:paused;
+    }
+</style>
+<body>
+  <div id="b1"></div>
+  <div id="b2"></div>
+  <div id="b3"b></div>
+  <div id="b4"></div>
+  <div id="b5"></div>
+</body>
+</html>
